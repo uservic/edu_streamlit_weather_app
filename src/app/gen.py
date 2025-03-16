@@ -45,4 +45,5 @@ def generate_realistic_temperature_data(cities, num_years=10):
 
 # Генерация данных
 data = generate_realistic_temperature_data(list(seasonal_temperatures.keys()))
-data.to_csv('temperature_data.csv', index=False)
+# data.to_csv('temperature_data.csv', index=False)
+data.to_csv('resources/temperature_data.csv', index=False)

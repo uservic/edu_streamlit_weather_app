@@ -44,7 +44,7 @@ def prepare(data):
 
 
 def get_input_data():
-    raw_data = st.sidebar.file_uploader("Загрузить файл с данными", type={"csv", "txt"}, help="CSV, TXT")
+    raw_data = st.sidebar.file_uploader("Загрузить файл с историческими данными", type={"csv", "txt"}, help="CSV, TXT")
     if raw_data is not None:
         try:
             df = pd.read_csv(raw_data, parse_dates=['timestamp'])
